@@ -1,0 +1,344 @@
+---
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: https://api.github.com
+paths:
+  /repos/{org}/{repo}/milestones:
+    get:
+      description: Get all milestones for org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/issues:
+    get:
+      description: Get issues for org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/pulls/{pull_number}/reviews:
+    get:
+      description: Reviews on org repo pull request
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: pull_number
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/issues/{issue_number}/events:
+    get:
+      description: Events on org repo issue
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: issue_number
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/issues/{issue_number}/timeline:
+    get:
+      description: Get timeline of org repo issue
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: issue_number
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: integer
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/stats/contributors:
+    get:
+      description: Contributor stats on org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "202":
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/labels:
+    get:
+      description: All labels on an org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/assignees:
+    get:
+      description: All assignees to an org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /orgs/{org}/repos:
+    get:
+      description: All repos for an org
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/commits:
+    get:
+      description: All commits on an org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/issues/events:
+    get:
+      description: all issue events on org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+  /repos/{org}/{repo}/pulls:
+    get:
+      description: All pull requests on org repo
+      parameters:
+      - name: org
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: repo
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://api.github.com
+    servers:
+    - url: https://api.github.com
+components: {}
