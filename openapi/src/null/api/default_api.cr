@@ -10,7 +10,7 @@
 
 require "uri"
 
-module Default
+module
   class DefaultApi
     property api_client : ApiClient
 

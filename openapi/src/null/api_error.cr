@@ -8,7 +8,7 @@
 #OpenAPI Generator version: 5.0.1
 #
 
-module Errors
+module
   class ApiError < Exception
     getter code : Int32?
     getter response_headers : Hash(String, Array(String) | String)?

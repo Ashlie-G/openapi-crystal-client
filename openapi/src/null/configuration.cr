@@ -10,7 +10,7 @@
 
 require "log"
 
-module ApiConfig
+module
   class Configuration
     # Defines url scheme
     property scheme : String
