@@ -12,7 +12,7 @@
 require "crest"
 require "log"
 
-module 
+module Main
   Log = ::Log.for("") # => Log for  source
 
   VERSION = {{ `shards version #{__DIR__}`.chomp.stringify }}
