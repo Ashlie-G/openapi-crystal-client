@@ -10,7 +10,7 @@
 
 require "log"
 
-module
+module CrystalKit
   class Configuration
     # Defines url scheme
     property scheme : String

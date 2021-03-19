@@ -10,7 +10,7 @@
 
 require "uri"
 
-module
+module CrystalKit
   class DefaultApi
     property api_client : ApiClient
 

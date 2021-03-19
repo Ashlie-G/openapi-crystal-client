@@ -12,8 +12,8 @@
 require "crest"
 require "log"
 
-module
-  Log = ::Log.for("") # => Log for  source
+module CrystalKit
+  Log = CrystalKit::Log.for("") # => Log for  source
 
   VERSION = {{ `shards version #{__DIR__}`.chomp.stringify }}
 
